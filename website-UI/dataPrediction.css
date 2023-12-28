@@ -1,0 +1,104 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* header section */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    box-sizing: border-box;    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #080808 ;
+    color: #fff;
+}
+
+#header{
+    background-image: url(images/wallhaven-726eq9.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+.logo{
+    margin: 10px 150px;
+    width: 250px;
+}
+
+/* air / water index quality */
+
+#services{
+    padding: 30px 0px;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 15px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 20px;
+    font-weight:500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color:#fff;
+    margin-top: 20px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background-color: #ff004f;
+    transform: translate(-10px);
+}
+
+.predictionButton{
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    background:#262626;
+    transition: background-color 0.7s;
+}
+
+.predictionButton :hover{
+    color: #ff004f;
+}
+
+.sub-title{
+    font-size: 40px;
+    text-align: center;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalVission</title>
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css"> 
+    
+    <!-- unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- scriptsheet -->
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <!------------------- header-------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- logo -->
+                <div class="logo">
+                    <h1><span style="color: #FFB000;">Global</span><span style="color: #4D2DB7;">Vission</span> & Predictions</h1>
+                </div>
+                <ul id="sidemenu">
+                    <!-- navigation bar -->
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Organizations</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="login.html">Sign In</a></li>
+                    <i class="uil uil-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="uil uil-list-ul" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1> <span style="font-size: 50px;">WELCOME TO</span><br>
+                    <span style="color: #FFB000;">GLOBAL</span><span style="color: #4D2DB7;">VISSION</span>
+                </h1>
+                <p>ML Predictions <br>Monitoring of Air(AQI) and Water(WQI) </p>
+            </div> 
+        </div>
+    </div>
+
+     <!-- ---------------------------------------------ABOUT ME------------------------------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/35777f9ded02657183e0f5b96803efe0.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>We at TerraVision & Predictions are all about providing service for future predictions of the environment quality for Air and Water, 
+                        using a pre existing data set or a real time running data set, our machine learning model predicts the future AQI and WQI with accuracy,
+                        this could help in identifying the important parameters for the Air and Water quality to be used in the future, hence if the prediction 
+                        in case identifies a hike in index quality, alerts the concerned government department to take the required counter measures effectively 
+                        and immediately, avoiding any kind of future environmental threats. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technologies Used</p>
+                        <p class="tab-links" onclick="opentab('experience')">Monitoring</p>
+                        <p class="tab-links" onclick="opentab('education')">Accuracy & Assurance</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Gradio</li>
+                            <li><span>Data Prediciton</span><br>Machine Learning - Python</li>
+                            <li><span>Testing & Training</span><br>SCIKIT - Learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Pre Existent Data Sets</span><br>CSV files</li>
+                            <li><span>Real Time Data Sets</span><br>Website URLs</li>      
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Data Quality/Quantity</span><br>Valid Parameters and Reliable Data, ensures precise predictions.</li>
+                            <li><span>Interdisciplinary Collaboration</span><br>Engage experts from multiple disciplines, including environmental science, meteorology, and data science, to ensure a comprehensive and accurate approach.</li>
+                            <li><span>Model Transparency</span><br>Our model is transparent and interpretable. Explainable AI techniques can help stakeholders understand why the model makes certain predictions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------SERVICES------------------------------------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">Our Services</div>
+            <div class="services-list">
+                <div>
+                    <i class="uil uil-mobile-android-alt"></i>
+                    <h2>Data Monitoring</h2>
+                    <p style="font-size: 15px;">
+                        We have implemented a comprehensive data monitoring system for air and water quality in the designated region, offering accessible APIs.
+                         Our sophisticated algorithms enable real-time calculation of both Air Quality Index (AQI) and Water Quality Index (WQI), providing 
+                         concerned citizens, organization and government sectors with valuable insights to maintain a healthier and more sustainable environment.
+                    </p>
+                    <a href="data_monitoring.html">
+                        <button id="prediction" class="predictionButton" style="font-size: 18px; color: white;">
+                            Start Monitoring!
+                        </button>
+                    </a>
+                </div>
+                <div>
+                    <i class="uil uil-layers-alt"></i>
+                    <h2>Data Prediction</h2>
+                    <p style="font-size: 15px;">
+                        Utilizing a validated dataset and a robust machine learning model, we are well-equipped to predict future Air Quality Index (AQI) 
+                        and Water Quality Index (WQI) with a high degree of accuracy. Our rigorous approach ensures the reliability of these predictions, 
+                        empowering informed decision-making and proactive environmental management.
+                    </p>
+                    <a href="data_prediction.html">
+                        <button id="prediction" class="predictionButton" style="font-size: 18px; color: white;">
+                            Start Prediction!
+                        </button>
+                    </a>
+                    <!-- <a id="prediction" style="font-size: 18px;">Start Prediction!</a> -->
+                </div>
+
+                
+                <!-- <div>
+                    <i class="uil uil-laptop"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Lorem ipsum dolor sit, suscipit natus quisquam 
+                        itaque commodi temporibus molestiae at illo.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------org----------------------------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">Organizations</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/g2.png.webp">
+                    <div class="layer">
+                        <h3>ORG_1</h3>
+                        <p>Basic description of how this organization is collaborating/providing</p>
+                        <a href="#"><i class="uil uil-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/1ab5fdc6a5124c89dbb766d4732052e1.jpg">
+                    <div class="layer">
+                        <h3>ORG_2</h3>
+                        <p>Basic description of how this organization is collaborating/providing</p>
+                        <a href="#"><i class="uil uil-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/35777f9ded02657183e0f5b96803efe0.jpg">
+                    <div class="layer">
+                        <h3>ORG_3</h3>
+                        <p>Basic description of how this organization is collaborating/providing</p>
+                        <a href="#"><i class="uil uil-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- --------------------------------------Contact Me------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="uil uil-laptop"></i>someMailId@gmail.com</p>
+                    <p><i class="uil uil-phone"></i>+91 234567890</p>
+                    <div class="social-icons">
+                        <a href=""><i class="uil uil-instagram"></i></a>
+                        <a href=""><i class="uil uil-github"></i></a>
+                        <a href=""><i class="uil uil-twitter-alt"></i></a>
+                        <a href=""><i class="uil uil-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email ID" placeholder="Your Email" required>
+                        <textarea name="Message" rows="3" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © GloablVission & Prediciton 2023.</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body> 
+</html>
